@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Học web chuẩn</title>
+<link rel="stylesheet" href="style.css">
+<style>
+    /* Căn giữa toàn bộ phần portfolio */
+.portfolio {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 40px auto;
+  max-width: 1100px;
+}
+
+/* Tiêu đề */
+.portfolio h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Thanh menu (All, Web App, ...) */
+.list-tab {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.list-tab li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.list-tab a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+/* Tab đang chọn (All) có màu xanh và gạch chân */
+.list-tab a.active {
+  color: #009999;
+  border-bottom: 2px solid #009999;
+}
+
+/* Khi hover đổi màu chữ */
+.list-tab a:hover {
+  color: #009999;
+}
+
+/* Vùng hình ảnh */
+.gallery {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* khoảng cách giữa các ảnh */
+}
+
+/* Mỗi ảnh có cùng kích thước */
+.gallery li {
+  flex: 0 0 calc(33.33% - 20px); /* 3 cột trên 1 hàng */
+  box-sizing: border-box;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+}
+</style>
+</head>
+<body>
+<section class="portfolio">
+  <h2>MY PORTFOLIO</h2>
+
+  <ul class="list-tab">
+    <li><a href="./" class="active">All</a></li>
+    <li><a href="./">Web App</a></li>
+    <li><a href="./">UI/UX</a></li>
+    <li><a href="./">Graphics Design</a></li>
+    <li><a href="./">Mobile App</a></li>
+    <li><a href="./">Branding</a></li>
+    <li><a href="./">Marketing</a></li>
+  </ul>
+
+  <ul class="gallery">
+    <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt=""></a></li>
+    <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt=""></a></li>
+    <li><a href="./"><img src="https://hocwebchuan.com/exercises/images/img_350x260.png" alt=""></a></li>
+  </ul>
+</section>
+</body>
+</html>
+

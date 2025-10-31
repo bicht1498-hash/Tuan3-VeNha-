@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bố cục trang web cơ bản</title>
+  <style>
+    /* Đặt lại các giá trị mặc định và đảm bảo kích thước phần tử nhất quán */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Cài đặt phông chữ cho toàn bộ trang */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    /* Khung tổng bao quanh toàn bộ nội dung trang */
+    #wrapper {
+      width: 80%;              /* Chiếm 80% chiều rộng trình duyệt */
+      max-width: 800px;        /* Giới hạn tối đa 800px để dễ đọc */
+      margin: 20px auto;       /* Căn giữa trang */
+      border: 2px solid #000;  /* Viền ngoài khung */
+      padding: 10px;
+      display: flex;
+      flex-direction: column;  /* Sắp xếp các phần tử theo cột */
+      gap: 10px;               /* Khoảng cách giữa các phần tử */
+      background-color: #fff;
+    }
+
+    /* Định dạng chung cho các phần chính */
+    header, nav, main, footer {
+      padding: 20px;
+      text-align: center;
+      border: 1px solid #000;
+      background-color: #fafafa;
+    }
+
+    header, footer {
+      width: 100%;
+    }
+
+    /* Vùng chứa phần nav và main nằm cạnh nhau */
+    .content-row {
+      display: flex;
+      gap: 10px;
+      width: 100%;
+    }
+
+    /* Thanh điều hướng bên trái */
+    nav {
+      flex: 1;                  /* Chiếm 1 phần */
+      background-color: #f9f9f9;
+    }
+
+    /* Phần nội dung chính bên phải */
+    main {
+      flex: 2;                  /* Chiếm 2 phần (rộng gấp đôi nav) */
+      background-color: #f9f9f9;
+    }
+
+    /* Chân trang */
+    footer {
+      background-color: #f9f9f9;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <header>Header</header>
+
+    <!-- Nav và Main nằm cùng hàng -->
+    <div class="content-row">
+      <nav>Nav</nav>
+      <main>Main</main>
+    </div>
+
+    <!-- Footer nằm dưới cùng, không cùng hàng -->
+    <footer>Footer</footer>
+  </div>
+
+</body>
+</html>
